@@ -1,0 +1,19 @@
+{
+	// Class creation
+	"Class": {
+		"prefix": ["cls"],
+		"body": "namespace ${1:namespace};\npublic class ${TM_FILENAME_BASE} {\n\t${0}\n}",
+	},
+
+	// Interface creation
+	"Interface": {
+		"prefix": ["ifs"],
+		"body": "namespace ${1: namespace};\npublic interface ${TM_FILENAME_BASE} {\n\t${0}\n}",
+	},
+
+	// For fun
+	"ConsoleWriteLine": {
+		"prefix": ["cwl"],
+		"body": "Console.WriteLine(${0})",
+	}
+}

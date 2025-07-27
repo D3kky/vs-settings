@@ -115,6 +115,16 @@
         "when": "editorTextFocus",
     },
 
+    // Delte word
+    {
+        "key": "ctrl+d ctrl+w",
+        "command": "deleteWordRight",
+    },
+    {
+        "key": "ctrl+d ctrl+b",
+        "command": "deleteWordLeft"
+    },
+
     // TREE VIEW COMMANDS
     // Toggle file explorer
     {
@@ -167,6 +177,13 @@
     {
         "key": "ctrl+d ctrl+d",
         "command": "editor.action.clipboardCutAction",
+        "when": "editorTextFocus"
+    },
+
+    // Find and replace
+    {
+        "key" : "alt+f",
+        "command" : "editor.action.startFindReplaceAction",
         "when": "editorTextFocus"
     },
 
