@@ -7,7 +7,7 @@
   "git.autofetch": true,
   "git.suggestSmartCommit": false,
   "debug.disassemblyView.showSourceCode": false,
-  "editor.formatOnSave": false,
+  "editor.formatOnSave": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.openRepositoryInParentFolders": "never",
   "editor.tabSize": 2,
@@ -17,13 +17,25 @@
   "editor.minimap.enabled": false,
   "explorer.confirmDelete": false,
   "terminal.integrated.defaultProfile.windows": "PowerShell",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "workbench.iconTheme": "catppuccin-mocha",
   "editor.cursorStyle": "line",
   "editor.cursorBlinking": "solid",
-  "workbench.colorTheme": "Catppuccin Mocha",
+  "workbench.colorTheme": "Andromeda",
   "files.autoSave": "onFocusChange",
-  "[csharp]": {
-    "editor.defaultFormatter": "ms-dotnettools.csharp"
+  "editor.lineNumbers": "relative",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "[dockercompose]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.autoIndent": "advanced",
+    "editor.quickSuggestions": {
+      "other": true,
+      "comments": false,
+      "strings": true
+    },
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  },
+  "[github-actions-workflow]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
   }
 }
