@@ -126,11 +126,6 @@
     },
 
     // TREE VIEW COMMANDS
-    // Toggle file explorer
-    {
-        "key": "ctrl+e",
-        "command": "workbench.view.explorer",
-    },
     // Create new file when in explorer
     {
         "key": "n",
@@ -214,17 +209,41 @@
         "command": "editor.action.formatDocument"
     },
 
-    // .NET PROJECTS
-    // New class
+    // Move between filetree, terminal and input
+    // Editor
     {
-        "key": "ctrl+shift+n ctrl+shift+c",
-        "command": "workbench.action.tasks.runTask",
-        "args": "New class"
+        "command": "runCommands",
+        "key": "ctrl+i",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.closePanel"
+            ]
+        },
+        "when": "terminalFocus || explorerViewletFocus"
     },
-    // New api controller
+    // Explorer
     {
-        "key": "ctrl+shift+n ctrl+shift+a",
-        "command": "workbench.action.tasks.runTask",
-        "args": "New controller"
+        "command": "runCommands",
+        "key": "ctrl+e",
+        "args": {
+            "commands": [
+                "workbench.view.explorer",
+                "workbench.action.closePanel"
+            ]
+        },
+        "when": "terminalFocus || editorFocus"
     },
+    // Terminal
+    {
+        "command": "runCommands",
+        "key": "ctrl+`",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        "when": "explorerViewletFocus || editorFocus"
+    }
 ]
