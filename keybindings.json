@@ -237,5 +237,23 @@
             ]
         },
         "when": "explorerViewletFocus || editorFocus"
+    },
+    // HOVER show
+    {
+        "command": "editor.action.showHover",
+        "key": "ctrl+shift+i",
+        "when": "editorFocus"
+    },
+    // Jump to definition
+    {
+        "command": "editor.action.goToTypeDefinition",
+        "key": "ctrl+shift+j ctrl+shift+d",
+        "when": "editorFocus"
+    },
+    // Jump to implementation
+    {
+        "command": "editor.action.goToImplementation",
+        "key": "ctrl+shift+j ctrl+shift+i",
+        "when": "editorFocus"
     }
 ]
