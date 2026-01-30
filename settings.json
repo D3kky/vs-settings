@@ -67,5 +67,8 @@
   },
 
   "workbench.editor.enablePreview": true,
-  "editor.largeFileOptimizations": true
+  "editor.largeFileOptimizations": true,
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }

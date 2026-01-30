@@ -16,7 +16,6 @@
         "key": "alt+w",
         "command": "workbench.action.closeActiveEditor"
     },
-
     // MOTIONS
     // Move left in text
     {
@@ -32,7 +31,7 @@
     {
         "key": "ctrl+shift+l",
         "command": "cursorMove",
-        "args":{
+        "args": {
             "to": "right",
             "by": "character",
             "select": true,
@@ -50,9 +49,9 @@
         "key": "ctrl+shift+h",
         "command": "cursorMove",
         "args": {
-          "to": "left",
-          "by": "character",
-          "select": true
+            "to": "left",
+            "by": "character",
+            "select": true
         },
         "when": "editorTextFocus"
     },
@@ -114,7 +113,6 @@
         "command": "cursorWordLeftSelect",
         "when": "editorTextFocus",
     },
-
     // Delte word
     {
         "key": "ctrl+d ctrl+w",
@@ -124,7 +122,6 @@
         "key": "ctrl+d ctrl+b",
         "command": "deleteWordLeft"
     },
-
     // TREE VIEW COMMANDS
     // Create new file when in explorer
     {
@@ -161,27 +158,23 @@
         "command": "list.focusDown",
         "when": "explorerViewletFocus",
     },
-
     // Open file finder
     {
         "key": "ctrl+f",
         "command": "workbench.action.quickOpen",
     },
-
     // Delete line
     {
         "key": "ctrl+d ctrl+d",
         "command": "editor.action.clipboardCutAction",
         "when": "editorTextFocus"
     },
-
     // Find and replace
     {
-        "key" : "alt+f",
-        "command" : "editor.action.startFindReplaceAction",
+        "key": "alt+f",
+        "command": "actions.find",
         "when": "editorTextFocus"
     },
-
     // TERMINAL
     {
         "key": "ctrl+k",
@@ -208,7 +201,6 @@
         "key": "ctrl+shift+f",
         "command": "editor.action.formatDocument"
     },
-
     // Move between filetree, terminal and input
     // Editor
     {
