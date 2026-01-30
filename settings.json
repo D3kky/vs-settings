@@ -39,6 +39,8 @@
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
 
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
   // AI IS DOGSHIT
   "chat.disableAIFeatures": true,
 
@@ -49,6 +51,7 @@
     "**/.git": true
   },
 
+  // "Performance"
   "search.exclude": {
     "**/node_modules": true,
     "**/dist": true,
@@ -61,5 +64,8 @@
     "**/.hg/store/**": true,
     "**/dist": true,
     "**/build": true,
-  }
+  },
+
+  "workbench.editor.enablePreview": true,
+  "editor.largeFileOptimizations": true
 }
