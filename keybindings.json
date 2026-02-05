@@ -1,10 +1,14 @@
 // Place your key bindings in this file to override the defaultsauto[]
 [
+    {
+        "key": "alt+s",
+        "command": "csdevkit.openSolution"
+    },
     //Put the cursor at the start of the line
     // Switch tab to next
     {
         "key": "alt+k",
-        "command": "workbench.action.nextEditor",
+        "command": "workbench.action.nextEditor"
     },
     // Switch tab to previous
     {
@@ -24,35 +28,35 @@
         "command": "cursorMove",
         "args": {
             "to": "right",
-            "by": "character",
+            "by": "character"
         },
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Selectj
     {
         "key": "ctrl+shift+l",
         "command": "cursorMove",
-        "args":{
+        "args": {
             "to": "right",
             "by": "character",
-            "select": true,
+            "select": true
         },
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Move right in text
     {
         "key": "ctrl+h",
         "command": "cursorLeft",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Select
     {
         "key": "ctrl+shift+h",
         "command": "cursorMove",
         "args": {
-          "to": "left",
-          "by": "character",
-          "select": true
+            "to": "left",
+            "by": "character",
+            "select": true
         },
         "when": "editorTextFocus"
     },
@@ -60,7 +64,7 @@
     {
         "key": "ctrl+j",
         "command": "cursorUp",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Select
     {
@@ -69,15 +73,15 @@
         "args": {
             "to": "up",
             "by": "character",
-            "select": true,
+            "select": true
         },
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Move down
     {
         "key": "ctrl+k",
         "command": "cursorDown",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Select
     {
@@ -86,9 +90,9 @@
         "args": {
             "to": "down",
             "by": "character",
-            "select": true,
+            "select": true
         },
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Move forward word
     {
@@ -100,7 +104,7 @@
     {
         "key": "ctrl+shift+w",
         "command": "cursorWordRightSelect",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
     // Move back word
     {
@@ -112,13 +116,13 @@
     {
         "key": "ctrl+shift+b",
         "command": "cursorWordLeftSelect",
-        "when": "editorTextFocus",
+        "when": "editorTextFocus"
     },
 
     // Delte word
     {
         "key": "ctrl+d ctrl+w",
-        "command": "deleteWordRight",
+        "command": "deleteWordRight"
     },
     {
         "key": "ctrl+d ctrl+b",
@@ -129,7 +133,7 @@
     // Toggle file explorer
     {
         "key": "ctrl+e",
-        "command": "workbench.view.explorer",
+        "command": "workbench.view.explorer"
     },
     // Create new file when in explorer
     {
@@ -147,30 +151,30 @@
     {
         "key": "e",
         "command": "renameFile",
-        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus",
+        "when": "filesExplorerFocus && foldersViewVisible && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
     },
     //Make a folder
     {
         "key": "ctrl+n",
         "command": "explorer.newFolder",
-        "when": "explorerViewletFocus && !inputFocus",
+        "when": "explorerViewletFocus && !inputFocus"
     },
     // Move up in file tree
     {
         "key": "ctrl+j",
         "command": "list.focusUp",
-        "when": "explorerViewletFocus",
+        "when": "explorerViewletFocus"
     },
     {
         "key": "ctrl+k",
         "command": "list.focusDown",
-        "when": "explorerViewletFocus",
+        "when": "explorerViewletFocus"
     },
 
     // Open file finder
     {
         "key": "ctrl+f",
-        "command": "workbench.action.quickOpen",
+        "command": "workbench.action.quickOpen"
     },
 
     // Delete line
@@ -182,8 +186,8 @@
 
     // Find and replace
     {
-        "key" : "alt+f",
-        "command" : "editor.action.startFindReplaceAction",
+        "key": "alt+f",
+        "command": "editor.action.startFindReplaceAction",
         "when": "editorTextFocus"
     },
 
@@ -191,17 +195,17 @@
     {
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focusNext",
-        "when": "terminalFocus",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+j",
         "command": "workbench.action.terminal.focusPrevious",
-        "when": "terminalFocus",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+w",
         "command": "workbench.action.terminal.kill",
-        "when": "terminalFocus",
+        "when": "terminalFocus"
     },
     {
         "key": "ctrl+n",
@@ -226,5 +230,5 @@
         "key": "ctrl+shift+n ctrl+shift+a",
         "command": "workbench.action.tasks.runTask",
         "args": "New controller"
-    },
+    }
 ]
