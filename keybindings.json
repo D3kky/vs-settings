@@ -20,7 +20,6 @@
         "key": "alt+w",
         "command": "workbench.action.closeActiveEditor"
     },
-
     // MOTIONS
     // Move left in text
     {
@@ -118,7 +117,6 @@
         "command": "cursorWordLeftSelect",
         "when": "editorTextFocus"
     },
-
     // Delte word
     {
         "key": "ctrl+d ctrl+w",
@@ -128,13 +126,7 @@
         "key": "ctrl+d ctrl+b",
         "command": "deleteWordLeft"
     },
-
     // TREE VIEW COMMANDS
-    // Toggle file explorer
-    {
-        "key": "ctrl+e",
-        "command": "workbench.view.explorer"
-    },
     // Create new file when in explorer
     {
         "key": "n",
@@ -170,27 +162,23 @@
         "command": "list.focusDown",
         "when": "explorerViewletFocus"
     },
-
     // Open file finder
     {
         "key": "ctrl+f",
         "command": "workbench.action.quickOpen"
     },
-
     // Delete line
     {
         "key": "ctrl+d ctrl+d",
         "command": "editor.action.clipboardCutAction",
         "when": "editorTextFocus"
     },
-
     // Find and replace
     {
         "key": "alt+f",
-        "command": "editor.action.startFindReplaceAction",
+        "command": "actions.find",
         "when": "editorTextFocus"
     },
-
     // TERMINAL
     {
         "key": "ctrl+k",
@@ -217,18 +205,59 @@
         "key": "ctrl+shift+f",
         "command": "editor.action.formatDocument"
     },
-
-    // .NET PROJECTS
-    // New class
+    // Move between filetree, terminal and input
+    // Editor
     {
-        "key": "ctrl+shift+n ctrl+shift+c",
-        "command": "workbench.action.tasks.runTask",
-        "args": "New class"
+        "command": "runCommands",
+        "key": "ctrl+i",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.closePanel"
+            ]
+        },
+        "when": "terminalFocus || explorerViewletFocus"
     },
-    // New api controller
+    // Explorer
     {
-        "key": "ctrl+shift+n ctrl+shift+a",
-        "command": "workbench.action.tasks.runTask",
-        "args": "New controller"
-    }
+        "command": "runCommands",
+        "key": "ctrl+e",
+        "args": {
+            "commands": [
+                "workbench.view.explorer",
+                "workbench.action.closePanel"
+            ]
+        },
+        "when": "terminalFocus || editorFocus"
+    },
+    // Terminal
+    {
+        "command": "runCommands",
+        "key": "ctrl+`",
+        "args": {
+            "commands": [
+                "workbench.action.closeSidebar",
+                "workbench.action.terminal.toggleTerminal"
+            ]
+        },
+        "when": "explorerViewletFocus || editorFocus"
+    },
+    // // HOVER show
+    // {
+    //     "command": "editor.action.showHover",
+    //     "key": "ctrl+shift+i",
+    //     "when": "editorFocus"
+    // },
+    // // Jump to definition
+    // {
+    //     "command": "editor.action.goToTypeDefinition",
+    //     "key": "ctrl+shift+j ctrl+shift+d",
+    //     "when": "editorFocus"
+    // },
+    // // Jump to implementation
+    // {
+    //     "command": "editor.action.goToImplementation",
+    //     "key": "ctrl+shift+j ctrl+shift+i",
+    //     "when": "editorFocus"
+    // }
 ]

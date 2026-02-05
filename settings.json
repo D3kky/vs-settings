@@ -4,7 +4,7 @@
   "gulp.autoDetect": "on",
   "grunt.autoDetect": "on",
   "jake.autoDetect": "on",
-  "git.autofetch": true,
+  "git.autofetch": false,
   "git.suggestSmartCommit": false,
   "debug.disassemblyView.showSourceCode": false,
   "editor.formatOnSave": false,
@@ -38,23 +38,53 @@
   "[github-actions-workflow]": {
     "editor.defaultFormatter": "redhat.vscode-yaml"
   },
+
+  "terminal.integrated.defaultProfile.linux": "zsh",
+
+  // Autocomplete by default disabeld
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.quickSuggestions": {
+    "other": "off",
+    "comments": "off",
+    "strings": "off"
+  },
+  "editor.wordBasedSuggestions": "off",
+  "editor.acceptSuggestionOnEnter": "off",
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.parameterHints": false,
+  "editor.quickSuggestionsDelay": 20,
+
+  // AI IS DOGSHIT
+  "chat.disableAIFeatures": true,
+
+  "files.exclude" : {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+    "**/.git": true
+  },
+
+  // "Performance"
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true,
+    "**/build": true,
+  },
+
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/.hg/store/**": true,
+    "**/dist": true,
+    "**/build": true,
+  },
+
+  "workbench.editor.enablePreview": true,
+  "editor.largeFileOptimizations": true,
   "[jsonc]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
-  "[csharp]": {
-    "editor.maxTokenizationLineLength": 2500
-  },
-  "workbench.editorAssociations": {
-    "*.copilotmd": "vscode.markdown.preview.editor",
-    "*.code-workspace": "default"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "denoland.vscode-deno"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
 
   // AI BS
-  "chat.disableAIFeatures": true,
+  "chat.disableAIFeatures: true"
 }
