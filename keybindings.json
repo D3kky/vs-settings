@@ -248,13 +248,18 @@
     // Jump to definition
     {
         "command": "editor.action.goToTypeDefinition",
-        "key": "alt+j alt+d",
+        "key": "shift+alt+j shift+alt+d",
         "when": "editorFocus"
     },
     // Jump to implementation
     {
         "command": "editor.action.goToImplementation",
-        "key": "alt+j alt+d",
+        "key": "shift+alt+j shift+alt+i",
         "when": "editorFocus"
+    },
+    // Panel splitting
+    {
+        "command": "workbench.action.splitEditor",
+        "key": "alt+n",
     }
 ]
