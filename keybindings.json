@@ -216,7 +216,6 @@
                 "workbench.action.closePanel"
             ]
         },
-        "when": "terminalFocus || explorerViewletFocus"
     },
     // Explorer
     {
@@ -224,11 +223,10 @@
         "key": "ctrl+e",
         "args": {
             "commands": [
-                "workbench.view.explorer",
+                "workbench.action.focusSideBar",
                 "workbench.action.closePanel"
             ]
         },
-        "when": "terminalFocus || editorFocus"
     },
     // Terminal
     {
@@ -237,10 +235,9 @@
         "args": {
             "commands": [
                 "workbench.action.closeSidebar",
-                "workbench.action.terminal.toggleTerminal"
+                "workbench.action.terminal.toggleTerminal",
             ]
         },
-        "when": "explorerViewletFocus || editorFocus"
     },
     // // HOVER show
     // {
@@ -248,16 +245,16 @@
     //     "key": "ctrl+shift+i",
     //     "when": "editorFocus"
     // },
-    // // Jump to definition
-    // {
-    //     "command": "editor.action.goToTypeDefinition",
-    //     "key": "ctrl+shift+j ctrl+shift+d",
-    //     "when": "editorFocus"
-    // },
-    // // Jump to implementation
-    // {
-    //     "command": "editor.action.goToImplementation",
-    //     "key": "ctrl+shift+j ctrl+shift+i",
-    //     "when": "editorFocus"
-    // }
+    // Jump to definition
+    {
+        "command": "editor.action.goToTypeDefinition",
+        "key": "alt+j alt+d",
+        "when": "editorFocus"
+    },
+    // Jump to implementation
+    {
+        "command": "editor.action.goToImplementation",
+        "key": "alt+j alt+d",
+        "when": "editorFocus"
+    }
 ]
