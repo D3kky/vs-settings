@@ -1,58 +1,31 @@
 {
   "editor.fontFamily": "'Cascadia Mono', Menlo, Monaco, 'Courier New', monospace",
   "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum', 'calt'",
-  "gulp.autoDetect": "on",
-  "grunt.autoDetect": "on",
-  "jake.autoDetect": "on",
   "git.autofetch": false,
-  "git.suggestSmartCommit": false,
   "debug.disassemblyView.showSourceCode": false,
   "editor.formatOnSave": false,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "git.openRepositoryInParentFolders": "never",
   "editor.tabSize": 2,
-  "editor.accessibilityPageSize": 1,
-  "editor.accessibilitySupport": "off",
-  "editor.tabFocusMode": false,
   "editor.minimap.enabled": false,
   "explorer.confirmDelete": false,
-  "terminal.integrated.defaultProfile.windows": "PowerShell",
   "workbench.iconTheme": "catppuccin-mocha",
-  "editor.cursorStyle": "line",
+  "editor.cursorStyle": "line-thin",
   "editor.cursorBlinking": "solid",
   "workbench.colorTheme": "Andromeda",
   "files.autoSave": "onFocusChange",
   "editor.lineNumbers": "relative",
-  "workbench.secondarySideBar.defaultVisibility": "hidden",
-  "[dockercompose]": {
-    "editor.insertSpaces": true,
-    "editor.tabSize": 2,
-    "editor.autoIndent": "advanced",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": false,
-      "strings": true
-    },
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-  "[github-actions-workflow]": {
-    "editor.defaultFormatter": "redhat.vscode-yaml"
-  },
-
-  "terminal.integrated.defaultProfile.linux": "zsh",
 
   // Autocomplete by default disabeld
-  "editor.acceptSuggestionOnCommitCharacter": true,
-  "editor.quickSuggestions": {
-    "other": "off",
-    "comments": "off",
-    "strings": "off"
-  },
-  "editor.wordBasedSuggestions": "off",
-  "editor.acceptSuggestionOnEnter": "off",
-  "editor.suggestOnTriggerCharacters": false,
-  "editor.parameterHints": false,
-  "editor.quickSuggestionsDelay": 20,
+  // "editor.acceptSuggestionOnCommitCharacter": true,
+  // "editor.quickSuggestions": {
+  //   "other": "off",
+  //   "comments": "off",
+  //   "strings": "off"
+  // },
+  // "editor.wordBasedSuggestions": "off",
+  // "editor.acceptSuggestionOnEnter": "off",
+  // "editor.suggestOnTriggerCharacters": false,
+  // "editor.parameterHints": false,
+  // "editor.quickSuggestionsDelay": 20,
 
   // AI IS DOGSHIT
   "chat.disableAIFeatures": true,
@@ -81,10 +54,6 @@
 
   "workbench.editor.enablePreview": true,
   "editor.largeFileOptimizations": true,
-  "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
-  },
-
   // AI BS
   "chat.disableAIFeatures: true"
 }
