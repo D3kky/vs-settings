@@ -121,29 +121,7 @@
                 "height": 900
             }
         },
-        "openedWindows": [
-            {
-                "backupPath": "/home/dekky/.config/Code/Backups/1789757263676",
-                "uiState": {
-                    "mode": 0,
-                    "x": 16,
-                    "y": 10,
-                    "width": 1200,
-                    "height": 800
-                }
-            },
-            {
-                "folder": "file:///home/dekky/.config/Code/User",
-                "backupPath": "/home/dekky/.config/Code/Backups/8dc2a98f2d032e9507d3067a506384a1",
-                "uiState": {
-                    "mode": 0,
-                    "x": 16,
-                    "y": 10,
-                    "width": 1440,
-                    "height": 900
-                }
-            }
-        ]
+        "openedWindows": []
     },
     "windowSplashWorkspaceOverride": {
         "layoutInfo": {
