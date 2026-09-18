@@ -1,5 +1,5 @@
 # BECAUSE FUCKING VS CODE DECIDES I NEED LLM BS
-.*
+*
 !keybindings.json
 !snippets
 !settings.json
