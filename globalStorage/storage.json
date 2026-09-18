@@ -63,7 +63,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 0,
+            "sideBarWidth": 300,
             "auxiliaryBarWidth": 0,
             "statusBarHeight": 28,
             "windowBorder": false,
@@ -74,7 +74,7 @@
                     "top": 35,
                     "left": 4,
                     "width": 44,
-                    "height": 833,
+                    "height": 967,
                     "outerEdges": {
                         "left": true,
                         "right": false,
@@ -82,10 +82,22 @@
                         "bottom": true
                     }
                 },
+                "sideBar": {
+                    "top": 35,
+                    "left": 48,
+                    "width": 300,
+                    "height": 967,
+                    "outerEdges": {
+                        "left": false,
+                        "right": false,
+                        "top": true,
+                        "bottom": true
+                    }
+                },
                 "panel": {
-                    "top": 291,
-                    "left": 52,
-                    "width": 1384,
+                    "top": 425,
+                    "left": 352,
+                    "width": 1564,
                     "height": 577,
                     "outerEdges": {
                         "left": false,
@@ -96,9 +108,9 @@
                 },
                 "editor": {
                     "top": 35,
-                    "left": 52,
-                    "width": 1384,
-                    "height": 252,
+                    "left": 352,
+                    "width": 1564,
+                    "height": 386,
                     "outerEdges": {
                         "left": false,
                         "right": true,
@@ -114,7 +126,7 @@
             "folder": "file:///home/dekky/.config/Code/User",
             "backupPath": "/home/dekky/.config/Code/Backups/8dc2a98f2d032e9507d3067a506384a1",
             "uiState": {
-                "mode": 1,
+                "mode": 0,
                 "x": 16,
                 "y": 10,
                 "width": 1440,
@@ -136,7 +148,7 @@
                 "folder": "file:///home/dekky/.config/Code/User",
                 "backupPath": "/home/dekky/.config/Code/Backups/8dc2a98f2d032e9507d3067a506384a1",
                 "uiState": {
-                    "mode": 1,
+                    "mode": 0,
                     "x": 16,
                     "y": 10,
                     "width": 1440,
@@ -159,7 +171,7 @@
                     "auxiliaryBarVisible": true
                 },
                 "c4bd23ad70e29ec9ab538f86f055839c": {
-                    "sideBarVisible": false,
+                    "sideBarVisible": true,
                     "auxiliaryBarVisible": false
                 }
             }
