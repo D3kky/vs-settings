@@ -1,0 +1,6 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=VS Code
+TryExec=/usr/local/bin/vs-code/share/code/bin/code
+Exec=/usr/local/bin/vs-code/share/code/bin/code ~/.local/share/applications/
