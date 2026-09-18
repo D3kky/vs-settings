@@ -63,7 +63,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 35,
             "activityBarWidth": 48,
-            "sideBarWidth": 300,
+            "sideBarWidth": 0,
             "auxiliaryBarWidth": 0,
             "statusBarHeight": 28,
             "windowBorder": false,
@@ -82,22 +82,10 @@
                         "bottom": true
                     }
                 },
-                "sideBar": {
-                    "top": 35,
-                    "left": 48,
-                    "width": 300,
-                    "height": 967,
-                    "outerEdges": {
-                        "left": false,
-                        "right": false,
-                        "top": true,
-                        "bottom": true
-                    }
-                },
                 "panel": {
                     "top": 425,
-                    "left": 352,
-                    "width": 1564,
+                    "left": 52,
+                    "width": 1864,
                     "height": 577,
                     "outerEdges": {
                         "left": false,
@@ -108,8 +96,8 @@
                 },
                 "editor": {
                     "top": 35,
-                    "left": 352,
-                    "width": 1564,
+                    "left": 52,
+                    "width": 1864,
                     "height": 386,
                     "outerEdges": {
                         "left": false,
@@ -171,7 +159,7 @@
                     "auxiliaryBarVisible": true
                 },
                 "c4bd23ad70e29ec9ab538f86f055839c": {
-                    "sideBarVisible": true,
+                    "sideBarVisible": false,
                     "auxiliaryBarVisible": false
                 }
             }
